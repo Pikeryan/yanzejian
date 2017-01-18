@@ -1,0 +1,20 @@
+@charset "utf-8";
+.login-top{height:30px;width:100%;border-bottom:1px solid #ccc;padding:15px 0;
+  a{margin-left:80px;display:block;}
+}
+
+.login-main{width:100%;min-height:700px;background:#f7f2ec url("../images/login/login_bg.jpg") no-repeat center center;  }
+.loginBox{border:1px solid #ccc;box-shadow:0 0 8px 0px  #cccccc;width:420px;height:516px;float:right;margin-right:100px;margin-top:70px;background:#fff;
+  .loginBox-top {height:52px;background:#f7f7f9;
+    p{float:left;line-height:50px;width:210px;text-align: center;font-size:16px;color:#afafaf;cursor:pointer;}
+    p:hover{color:#464646;border-bottom:2px solid #464646;font-weight:600;}
+    .loginBox-p{color:#464646;border-bottom:2px solid #464646;font-weight:600;}
+  }
+  form{
+    div{width:302px;margin:0 auto;padding-top:25px;position: relative;
+    span{display:block;font-size:10px;line-height:16px;color:#f00;font-weight:600;padding-left:20px;}
+    }
+    input{width:280px;height:35px;border:1px #afafaf solid;padding:0 10px;line-height:35px;font-size:12px;margin-top:17px;outline: none;}
+    em{font-style:normal;font-size:12px;color:#afafaf;position:absolute;background: #fff;bottom:30px;left:10px;display:none;padding:0 3px;}
+  }
+}
