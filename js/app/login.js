@@ -41,5 +41,24 @@ $(function(){
         $(".loginBox .phoneBox").toggleClass("blockHide");
         $(".loginBox .codeBox").toggleClass("hideBlock");
     })
+    /*验证登陆*/
+    $("#signName").blur(function(){
+        var txt = $(this).val();
+        var rule = /^[0-9]{11}$/;
+        if(!(rule.test(txt))){
+            $("#signNameError").css("display","block")
+        }else{
+            $("#signNameError").css("display","none")
+        }
+    });
+    $("#signPassword").blur(function(){
+        var txt = $(this).val();
+        var rule = /^[0-9]{6}$/;
+        if( !(rule.test(txt)) ){
+            $("#signPasswordError").css("display","block")
+        }else{
+            $("#signPasswordError").css("display","none")
+        }
+    })
 
 })
