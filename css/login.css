@@ -20,10 +20,12 @@
   float: right;
   margin-right: 100px;
   margin-top: 70px;
-  background: #fff; }
+  background: #fff;
+  position: relative; }
   .loginBox .loginBox-top {
     height: 52px;
-    background: #f7f7f9; }
+    background: #f7f7f9;
+    margin-bottom: 20px; }
     .loginBox .loginBox-top p {
       float: left;
       line-height: 50px;
@@ -40,36 +42,153 @@
       color: #464646;
       border-bottom: 2px solid #464646;
       font-weight: 600; }
-  .loginBox form div {
+  .loginBox form {
     width: 302px;
-    margin: 0 auto;
-    padding-top: 25px;
-    position: relative; }
-    .loginBox form div span {
+    margin: 0 auto; }
+    .loginBox form .loginName {
+      position: relative; }
+      .loginBox form .loginName span {
+        display: none;
+        font-size: 10px;
+        line-height: 16px;
+        color: #f00;
+        padding-left: 20px; }
+        .loginBox form .loginName span strong {
+          float: left;
+          width: 15px;
+          height: 15px;
+          background: url("../images/login/login_sprite.png") no-repeat -200px 2px;
+          margin-right: 10px; }
+      .loginBox form .loginName em {
+        font-style: normal;
+        font-size: 12px;
+        color: #afafaf;
+        position: absolute;
+        background: #fff;
+        bottom: 30px;
+        left: 10px;
+        display: none;
+        padding: 0 3px; }
+    .loginBox form input {
+      width: 280px;
+      height: 35px;
+      border: 1px #afafaf solid;
+      padding: 0 10px;
+      line-height: 35px;
+      font-size: 12px;
+      margin-top: 17px;
+      outline: none; }
+  .loginBox .rememberPassword {
+    height: 20px;
+    margin: 20px 0; }
+    .loginBox .rememberPassword span {
+      color: #000;
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 20px; }
+    .loginBox .rememberPassword span:nth-of-type(1) {
+      float: left; }
+      .loginBox .rememberPassword span:nth-of-type(1) i {
+        float: left;
+        height: 20px;
+        width: 20px;
+        background: url("../images/login/login_sprite.png") no-repeat -159px 3px;
+        margin: 0 10px; }
+      .loginBox .rememberPassword span:nth-of-type(1) .iChecked {
+        background-position: -179px 3px; }
+    .loginBox .rememberPassword span:nth-of-type(2) {
+      float: right; }
+      .loginBox .rememberPassword span:nth-of-type(2) a {
+        padding: 0 3px; }
+  .loginBox .loginIn {
+    margin-bottom: 25px; }
+    .loginBox .loginIn input {
+      width: 100%;
+      height: 40px;
+      background: url("../images/login/login_sprite.png") no-repeat -1px -40px;
+      border: 0;
+      outline: none;
+      color: #fff;
+      cursor: pointer;
+      margin-top: 0; }
+    .loginBox .loginIn input:hover {
+      background-position: -1px -90px; }
+  .loginBox .otherLoginPort p:nth-of-type(1) {
+    height: 20px;
+    line-height: 20px;
+    background: url("../images/login/line.png"); }
+    .loginBox .otherLoginPort p:nth-of-type(1) span {
       display: block;
-      font-size: 10px;
-      line-height: 16px;
-      color: #f00;
-      font-weight: 600;
-      padding-left: 20px; }
-  .loginBox form input {
-    width: 280px;
-    height: 35px;
-    border: 1px #afafaf solid;
-    padding: 0 10px;
-    line-height: 35px;
+      width: 120px;
+      padding: 0 5px;
+      margin: 0 auto;
+      background: #fff; }
+  .loginBox .otherLoginPort p {
+    text-align: center;
     font-size: 12px;
-    margin-top: 17px;
-    outline: none; }
-  .loginBox form em {
-    font-style: normal;
-    font-size: 12px;
-    color: #afafaf;
+    margin-bottom: 20px; }
+    .loginBox .otherLoginPort p a {
+      float: left;
+      height: 30px;
+      width: 30px;
+      background: url("../images/login/login_sprite.png") no-repeat;
+      margin: 0 15px; }
+    .loginBox .otherLoginPort p a:nth-of-type(2) {
+      background-position: -30px 0px; }
+    .loginBox .otherLoginPort p a:nth-of-type(3) {
+      background-position: -60px 0px; }
+    .loginBox .otherLoginPort p a:nth-of-type(4) {
+      background-position: -90px 0px; }
+    .loginBox .otherLoginPort p a:nth-of-type(5) {
+      background-position: -120px 0px; }
+  .loginBox .erweima {
+    height: 58px;
+    width: 58px;
+    background: url("../images/login/login_sprite.png") no-repeat 0px -400px;
     position: absolute;
-    background: #fff;
-    bottom: 30px;
-    left: 10px;
-    display: none;
-    padding: 0 3px; }
+    bottom: 0;
+    right: 0;
+    cursor: pointer; }
+    .loginBox .erweima span {
+      display: block;
+      width: 84px;
+      height: 26px;
+      position: absolute;
+      bottom: 10px;
+      left: -80px;
+      background: url("../images/login/login_sprite.png") no-repeat 0px -360px; }
+  .loginBox .erweimalogin {
+    background-position: -71px -400px; }
+    .loginBox .erweimalogin .spanlogin {
+      background-position: -100px -360px; }
+  .loginBox .codeBox {
+    margin: 0 auto;
+    display: none; }
+    .loginBox .codeBox h4 {
+      font-size: 16px;
+      line-height: 30px;
+      margin: 30px; }
+    .loginBox .codeBox .erweiCode {
+      border: 1px solid #ccc;
+      padding: 5px;
+      margin: 90px auto 30px;
+      width: 152px; }
+    .loginBox .codeBox p {
+      text-align: center; }
+      .loginBox .codeBox p span {
+        color: #f00; }
+  .loginBox .hideBlock {
+    display: block; }
+  .loginBox .blockHide {
+    display: none; }
+  .loginBox .sign .validateCode {
+    float: left;
+    width: 140px;
+    margin-right: 20px; }
+  .loginBox .sign button {
+    floaat: left;
+    width: 120px;
+    height: 37px;
+    margin-top: 17px; }
 
 /*# sourceMappingURL=login.css.map */

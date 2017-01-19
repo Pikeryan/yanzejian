@@ -2,19 +2,84 @@
 .login-top{height:30px;width:100%;border-bottom:1px solid #ccc;padding:15px 0;
   a{margin-left:80px;display:block;}
 }
-
 .login-main{width:100%;min-height:700px;background:#f7f2ec url("../images/login/login_bg.jpg") no-repeat center center;  }
-.loginBox{border:1px solid #ccc;box-shadow:0 0 8px 0px  #cccccc;width:420px;height:516px;float:right;margin-right:100px;margin-top:70px;background:#fff;
-  .loginBox-top {height:52px;background:#f7f7f9;
+.loginBox{border:1px solid #ccc;box-shadow:0 0 8px 0px  #cccccc;width:420px;height:516px;float:right;margin-right:100px;margin-top:70px;background:#fff;position:relative;
+  .loginBox-top {height:52px;background:#f7f7f9;margin-bottom:20px;
     p{float:left;line-height:50px;width:210px;text-align: center;font-size:16px;color:#afafaf;cursor:pointer;}
     p:hover{color:#464646;border-bottom:2px solid #464646;font-weight:600;}
     .loginBox-p{color:#464646;border-bottom:2px solid #464646;font-weight:600;}
   }
-  form{
-    div{width:302px;margin:0 auto;padding-top:25px;position: relative;
-    span{display:block;font-size:10px;line-height:16px;color:#f00;font-weight:600;padding-left:20px;}
+  form{width:302px;margin:0 auto;
+    .loginName{position: relative;
+    span{display:none;font-size:10px;line-height:16px;color:#f00;padding-left:20px;
+      strong{float:left;width:15px;height:15px;background:url("../images/login/login_sprite.png") no-repeat -200px 2px; margin-right:10px;  }
     }
-    input{width:280px;height:35px;border:1px #afafaf solid;padding:0 10px;line-height:35px;font-size:12px;margin-top:17px;outline: none;}
-    em{font-style:normal;font-size:12px;color:#afafaf;position:absolute;background: #fff;bottom:30px;left:10px;display:none;padding:0 3px;}
+      em {
+        font-style: normal;
+        font-size: 12px;
+        color: #afafaf;
+        position: absolute;
+        background: #fff;
+        bottom: 30px;
+        left: 10px;
+        display: none;
+        padding: 0 3px;
+      }
+    }
+    input {
+      width: 280px;
+      height: 35px;
+      border: 1px #afafaf solid;
+      padding: 0 10px;
+      line-height: 35px;
+      font-size: 12px;
+      margin-top: 17px;
+      outline: none;
+    }
+  }
+  .rememberPassword{height:20px;margin:20px 0;
+    span{color:#000;font-weight:300;font-size:12px;line-height:20px;}
+    span:nth-of-type(1){float:left;
+      i{float:left;height:20px;width:20px;background:url("../images/login/login_sprite.png") no-repeat -159px 3px;margin:0 10px;}
+      .iChecked{background-position: -179px 3px}
+    }
+    span:nth-of-type(2){float:right;
+      a{padding:0 3px;}
+    }
+  }
+  .loginIn{margin-bottom:25px;
+    input{width:100%;height:40px;background:url("../images/login/login_sprite.png") no-repeat  -1px -40px;border:0;outline: none;color:#fff;cursor:pointer;margin-top:0}
+    input:hover{background-position:-1px -90px;}
+  }
+  .otherLoginPort{
+    p:nth-of-type(1){height:20px;line-height:20px;background:url("../images/login/line.png");
+      span{display:block;width:120px;padding:0 5px;margin:0 auto;background:#fff;}
+    }
+    p{text-align: center;font-size:12px;margin-bottom:20px;
+      a{float:left;height:30px;width:30px;background:url("../images/login/login_sprite.png") no-repeat ;margin:0 15px;}
+      a:nth-of-type(2){background-position:-30px 0px;}
+      a:nth-of-type(3){background-position:-60px 0px;}
+      a:nth-of-type(4){background-position:-90px 0px;}
+      a:nth-of-type(5){background-position:-120px 0px;}
+    }
+  }
+  .erweima{height:58px;width:58px;background:url("../images/login/login_sprite.png") no-repeat 0px -400px;position:absolute;bottom:0;right:0;cursor:pointer;
+    span{display:block;width:84px;height:26px;position:absolute;bottom:10px;left:-80px;background:url("../images/login/login_sprite.png") no-repeat 0px -360px;}
+  }
+
+  .erweimalogin{background-position:-71px -400px;
+    .spanlogin{background-position:-100px -360px;}
+  }
+  .codeBox{margin:0 auto;display:none;
+    h4{font-size:16px;line-height:30px;margin:30px;}
+    .erweiCode{border:1px solid #ccc;padding:5px;margin:90px auto 30px;width:152px;}
+    p{text-align: center;span{color:#f00;}}
+  }
+  .hideBlock{display:block;}
+  .blockHide{display:none;}
+
+  .sign{
+    .validateCode{float:left;width:140px;margin-right:20px;}
+    button{floaat:left;width:120px;height:37px;margin-top:17px;}
   }
 }
