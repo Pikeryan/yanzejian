@@ -1,0 +1,185 @@
+@charset "UTF-8";
+.top {
+  width: 100%;
+  height: 134px; }
+  .top .top1 {
+    height: 92px;
+    width: 100%;
+    background: #333333;
+    color: #fff; }
+  .top .top2 {
+    height: 42px;
+    background: #f7f7f7;
+    color: #000;
+    line-height: 42px;
+    font-size: 14px; }
+  .top .nav > a {
+    float: left;
+    height: 100%;
+    width: 70px;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+    border: 1px solid #f7f7f7;
+    border-bottom: 0; }
+  .top .top2 > .container {
+    position: relative; }
+  .top .top2 .nav {
+    width: 640px;
+    margin: 0 auto; }
+  .top .nav > a:hover {
+    border: 1px solid #999;
+    border-bottom: 0;
+    background: #fff; }
+  .top .navBox {
+    width: 747px;
+    min-height: 300px;
+    border: 1px solid #999;
+    padding: 15px;
+    position: absolute;
+    top: 42px;
+    z-index: 10;
+    display: none;
+    background: #fff; }
+    .top .navBox a {
+      padding: 0 5px;
+      text-decoration: none;
+      color: #666; }
+  .top h5 {
+    font-size: 12px;
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+    font-weight: 600; }
+  .top .navBox a:hover {
+    color: #f00; }
+  .top .navleft {
+    float: left;
+    width: 453px;
+    min-height: 300px;
+    line-height: 20px;
+    font-size: 12px; }
+    .top .navleft div {
+      border-bottom: 1px dashed #ccc;
+      padding: 10px 0 4px 0; }
+    .top .navleft div:last-child {
+      border: 0; }
+  .top .navright {
+    float: right;
+    width: 232px;
+    min-height: 300px;
+    line-height: 20px;
+    font-size: 12px; }
+    .top .navright a {
+      float: left;
+      width: 115px; }
+  .top .col-lg-1 {
+    line-height: 44px;
+    text-decoration: none;
+    color: #fff; }
+  .top .col-lg-1:hover {
+    color: #f00; }
+
+.topRow {
+  height: 48px;
+  font-size: 12px;
+  /*购物袋样式处理*/
+  /*这里是我的走秀的样式处理*/ }
+  .topRow .headerLeft {
+    float: left;
+    line-height: 44px; }
+  .topRow .loginRegister {
+    float: left; }
+    .topRow .loginRegister a {
+      text-decoration: none;
+      margin: 0 1px;
+      color: #fff; }
+  .topRow .gouwudai {
+    float: left;
+    padding-left: 25px;
+    background: url("../images/header/spriter2016.png") no-repeat -215px -35px;
+    padding-right: 10px;
+    position: relative;
+    margin-left: 10px; }
+    .topRow .gouwudai span {
+      color: #f00; }
+    .topRow .gouwudai .daizi {
+      width: 300px;
+      background: #fff;
+      position: absolute;
+      top: 42px;
+      left: 0px;
+      color: #333;
+      z-index: 10;
+      padding: 10px;
+      display: none; }
+  .topRow .gouwudai:hover {
+    background: #fff url("../images/header/spriter2016.png") no-repeat -215px -70px;
+    color: #333; }
+  .topRow .myShow {
+    float: left;
+    padding: 0 15px;
+    position: relative;
+    border: 1px solid #333;
+    background: url("../images/header/spriter2016.png") no-repeat -161px -105px;
+    width: 80px;
+    border-bottom: 0; }
+    .topRow .myShow a {
+      text-decoration: none;
+      color: #fff; }
+    .topRow .myShow .myShowNav {
+      position: absolute;
+      top: 40px;
+      left: -1px;
+      width: 80px;
+      border: 1px solid #999;
+      display: none;
+      z-index: 9;
+      border-top: 0;
+      background: #fff;
+      line-height: 30px; }
+      .topRow .myShow .myShowNav a {
+        display: block;
+        color: #333;
+        text-align: center; }
+      .topRow .myShow .myShowNav a:hover {
+        color: #f00; }
+  .topRow .myShow:hover {
+    background: #fff url("../images/header/spriter2016.png") no-repeat -161px -140px;
+    border: 1px solid #999;
+    border-bottom: 0; }
+    .topRow .myShow:hover .myshownavtop {
+      color: #f00; }
+  .topRow h1 {
+    height: 33px;
+    width: 218px;
+    float: left;
+    background: url("../images/header/spriter2016.png") no-repeat;
+    margin: 0 auto;
+    margin-top: 8px;
+    margin-left: 18%; }
+  .topRow .formBox {
+    float: right;
+    margin-top: 10px; }
+    .topRow .formBox form {
+      border: 1px solid #787878;
+      width: 262px;
+      height: 26px; }
+      .topRow .formBox form input {
+        border: 0;
+        float: left;
+        height: 100%;
+        outline: none;
+        background: #333;
+        width: 230px;
+        color: #787878;
+        font-size: 12px; }
+      .topRow .formBox form input:nth-of-type(1) {
+        padding: 0 5px; }
+      .topRow .formBox form input:nth-of-type(2) {
+        width: 30px;
+        background: url("../images/header/spriter2016.png") no-repeat 0px -44px; }
+      .topRow .formBox form input:nth-of-type(2):hover {
+        background-position: -40px -44px; }
+
+/*# sourceMappingURL=header.css.map */
