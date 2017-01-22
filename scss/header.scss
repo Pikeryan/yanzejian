@@ -2,7 +2,9 @@
 .top{width:100%;height:134px;
   .top1{height:92px;width:100%;background:#333333;color:#fff;}
   .top2{height:42px;background:#f7f7f7;color:#000;line-height:42px;font-size:14px;}
-  .nav>a{float:left; height:100%;width:70px;text-align: center;color:#000;text-decoration: none;border:1px solid #f7f7f7;border-bottom:0}
+  .nav>a{float:left; height:100%;width:70px;text-align: center;color:#000;text-decoration: none;border:1px solid #f7f7f7;border-bottom:0;position:relative;
+    span{width:68px;height:3px;position:absolute;top:40px;left:0;background:#fff;z-index: 11;display:none}
+  }
   .top2>.container{position:relative;}
   .top2 .nav{width:640px;margin:0 auto;}
   .nav>a:hover{border:1px solid #999;border-bottom:0;background:#fff;}

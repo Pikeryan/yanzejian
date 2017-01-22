@@ -9,73 +9,103 @@
     <!-- 新 Bootstrap 核心 CSS 文件 -->
     <script src="js/lib/jquery.js"></script>
     <script src="js/app/index.js"></script>
-
+    <style>
+        .indexMain{width:1200px;margin:0 auto;}
+        #right_nav{
+            position:fixed;margin-left:1200px;top:200px;z-index:4;
+        }
+        #right_nav area{outline:none;}
+    </style>
 </head>
 <body>
-<div class="top"></div>
-<!--头部是外部引入写的-->
 
-<div class="indexBanner">
-    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-        </ol>
 
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-            <div class="item active">
-                <img src="images/0121banner.jpg" alt="">
-                <div class="carousel-caption">
-                    ...
+<div class="top" id="backTop"></div>
+
+<div class="indexMain">
+    <!--右侧导航栏-->
+    <div id="right_nav"><img src="images/0121right.png" usemap="#Mapright" >
+        <map name="Mapright">
+            <area shape="rect" coords="14,162,103,193" id="back" >
+            <area shape="rect" coords="15,137,104,163" href="http://www.xiu.com/cx/176713.shtml" target="_blank">
+            <area shape="rect" coords="13,110,104,136" href="http://www.xiu.com/cx/176712.shtml" target="_blank">
+            <area shape="rect" coords="14,82,105,108" href="http://www.xiu.com/cx/176714.shtml" target="_blank">
+            <area shape="rect" coords="14,58,105,84" id="jhFloor">
+        </map>
+    </div>
+    <!--头部是外部引入写的-->
+    <div class="indexBanner">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="images/0121banner.jpg" alt="">
+                    <div class="carousel-caption">
+                        ...
+                    </div>
                 </div>
-            </div>
-            <div class="item">
-                <img src="images/0121banner2.jpg" alt="...">
-                <div class="carousel-caption">
+                <div class="item">
+                    <img src="images/0121banner2.jpg" alt="...">
+                    <div class="carousel-caption">
 
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!--banner图部分实现采用的是bootstrap的插件写的-->
-<div class="xinrenfenxiang clear">
-    <a href="#"></a>
-    <a href="#"></a>
-    <a href="#"></a>
-    <a href="#"></a>
-</div><!--新人推荐模块-->
-<div class="jianduanhaohuo"><!--尖端好货-->
-    <img src="images/pic_19.jpg" alt="">
-    <div class="goodGoods ">
-        <!--<div class="clear">
-            <a href="#"><img src="images/0120goods_a1.jpg" alt=""><span></span></a>
-            <a href="#"><img src="images/0121goods_a2.jpg" alt=""><span></span></a>
-            <a href="#"><img src="images/0120goods_a3.jpg" alt=""><span></span></a>
-            <a href="#"><img src="images/0121goods_a4.jpg" alt=""><span></span></a>
-            <a href="#"><img src="images/0121goods_a5.jpg" alt=""><span></span></a>
-            <a href="#"><img src="images/0121goods_a6.jpg" alt=""><span></span></a>
-        </div>-->
+    <!--banner图部分实现采用的是bootstrap的插件写的-->
+    <div class="xinrenfenxiang clear">
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="#"></a>
+    </div><!--新人推荐模块-->
+    <div class="jianduanhaohuo " ><!--尖端好货-->
+        <img src="images/pic_19.jpg" alt="">
+        <div class="goodGoods ">
+            <!--<div class="clear">
+                <a href="#"><img src="images/0120goods_a1.jpg" alt=""><span></span></a>
+                <a href="#"><img src="images/0121goods_a2.jpg" alt=""><span></span></a>
+                <a href="#"><img src="images/0120goods_a3.jpg" alt=""><span></span></a>
+                <a href="#"><img src="images/0121goods_a4.jpg" alt=""><span></span></a>
+                <a href="#"><img src="images/0121goods_a5.jpg" alt=""><span></span></a>
+                <a href="#"><img src="images/0121goods_a6.jpg" alt=""><span></span></a>
+            </div>-->
+        </div>
+    </div>
+    <div class="rejianzhuanti">
+        <h3><img src="images/topic_t.jpg" alt=""></h3>
+        <div class="clear rejian">
+            <!--<a href="#"><img class="rejianimg" src="images/0110beats_01.jpg" alt=""><span><img src="images/0116beats_01.png" alt=""></span></a>
+            <a href="#"><img class="rejianimg" src="images/0119beats_02.jpg" alt=""><span><img src="images/0119beats_02.png" alt=""></span></a>-->
+        </div>
+        <p><a href="#"><img src="images/topic_m.jpg" alt=""></a></p>
+    </div>
+
+    <div class="pic"><!--走秀豪车-->
+        <a href="#"><img src="images/0105auto.jpg" alt="走秀豪车"></a>
+    </div>
+
+    <div class="haohuo">
+        <h3><img src="images/found_t.jpg" alt=""></h3>
+        <div class="faxianhaohuo clear">
+            <ul>
+                <!--<li><a href="#"><img src="images/20170105_001.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/20170105_002.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/20170105_003.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/20170105_004.jpg" alt=""></a></li>-->
+            </ul>
+        </div>
+        <p class="moregoods"><a href=""><img src="images/fonud_m.jpg" alt=""></a></p>
     </div>
 </div>
-<div class="rejianzhuanti">
-    <h3><img src="images/topic_t.jpg" alt=""></h3>
-    <div class="clear rejian">
-        <!--<a href="#"><img class="rejianimg" src="images/0110beats_01.jpg" alt=""><span><img src="images/0116beats_01.png" alt=""></span></a>
-        <a href="#"><img class="rejianimg" src="images/0119beats_02.jpg" alt=""><span><img src="images/0119beats_02.png" alt=""></span></a>-->
-    </div>
-    <p><a href="#"><img src="images/topic_m.jpg" alt=""></a></p>
-</div>
 
-<div class="pic"><!--走秀豪车-->
-    <a href="#"><img src="images/0105auto.jpg" alt="走秀豪车"></a>
-</div>
-
-<div class="haohuo">
-    <h3><img src="images/found_t.jpg" alt=""></h3>
-</div>
 
 
 <div class="indexfooter"></div>

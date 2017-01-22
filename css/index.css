@@ -97,5 +97,20 @@
     margin-bottom: 20px; }
     .haohuo h3 img {
       margin: 0 auto; }
+  .haohuo li {
+    float: left;
+    margin-right: 12px;
+    border: 2px solid #fff;
+    margin-bottom: 30px; }
+    .haohuo li a {
+      display: block; }
+  .haohuo li:hover {
+    border: 2px solid #999; }
+  .haohuo .moregoods {
+    margin-bottom: 40px; }
+    .haohuo .moregoods a {
+      display: block;
+      margin: 0 auto;
+      width: 158px; }
 
 /*# sourceMappingURL=index.css.map */

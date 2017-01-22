@@ -25,6 +25,29 @@ $(function(){
     /*热荐专题*/
     loadremen(rejianjson);
 
+    loadfaxianjson(faxianjson);
+
+/*回到顶部事件*/
+    $("#back").click(function(){
+        var top = $(window).scrollTop();
+        var timer = setInterval(function(){
+            $(window).scrollTop(top);
+            top-=100;
+            if(top<=0){
+                clearInterval(timer);
+                $(window).scrollTop(0);
+            }
+        },10)
+    });
+
+
+    /*尖端好货的点击时间*/
+    $("#jhFloor").click(function(){
+        var top = $(".jianduanhaohuo").offset().top - 100;
+        console.log(top);
+        $(window).scrollTop(top);
+
+    });
 })
 //尖端好货函数
 function loadjson(json){
@@ -64,5 +87,25 @@ function loadremen(json){
         a.append(img);
         a.append(span);
         $(".rejian").append(a);
+    })
+}
+
+
+
+var faxianjson　= [{"img":"images/20170105_001.jpg"},{"img":"images/20170105_002.jpg"},{"img":"images/20170105_003.jpg"},{"img":"images/20170105_004.jpg"},{"img":"images/20170105_005.jpg"},{"img":"images/20170112_006.jpg"},{"img":"images/20170105_007.jpg"},{"img":"images/20170105_008.jpg"},{"img":"images/20170105_009.jpg"},{"img":"images/20170105_010.jpg"},{"img":"images/20170105_011.jpg"},{"img":"images/20170105_012.jpg"},{"img":"images/20170105_013.jpg"},{"img":"images/20170105_014.jpg"},{"img":"images/20170105_015.jpg"},{"img":"images/20170105_016.jpg"}];
+//发现好货的js代码编写
+function loadfaxianjson(json){
+    $.each(json,function(index){
+        var li = $("<li>");
+        var a = $("<a>");
+        a.attr("href","#");
+        var img = $("<img>");
+        img.attr("src",this.img);
+        a.append(img);
+        li.append(a);
+        $(".faxianhaohuo ul").append(li);
+        if((index+1)%4 == 0){
+            li.css("marginRight",0);
+        }
     })
 }

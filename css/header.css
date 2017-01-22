@@ -21,7 +21,17 @@
     color: #000;
     text-decoration: none;
     border: 1px solid #f7f7f7;
-    border-bottom: 0; }
+    border-bottom: 0;
+    position: relative; }
+    .top .nav > a span {
+      width: 68px;
+      height: 3px;
+      position: absolute;
+      top: 40px;
+      left: 0;
+      background: #fff;
+      z-index: 11;
+      display: none; }
   .top .top2 > .container {
     position: relative; }
   .top .top2 .nav {

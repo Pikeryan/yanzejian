@@ -18,12 +18,16 @@ $(function(){
 
     /*导航栏的样式*/
     $(".nav a").hover(function(){
+        $(this.children[0]).css("display","block");
         var $left =  $(this).offset().left - $(".container").offset().left;
         if($left >= $(".container").width()- $(".navBox").width()){
             $left = $(".container").width()- $(".navBox").width()
         }
         $(".navBox").css({"display":"block","left":$left})
+    },function(){
+        $(this.children[0]).css("display","none");
     })
+
     $(".top2 .container").mouseleave(function(){
         $(".navBox").css({"display":"none"})
     })
@@ -38,6 +42,24 @@ $(function(){
         }
     })
 
+
+    /*吸顶菜单*/
+    var y = $(".xiding").offset().top;
+    $(window).scroll(function(){
+        var top = $(window).scrollTop();
+        if(top>=y){
+            $(".top").css({
+                "position":"fixed",
+                "top":-y,
+                "zIndex":"5"
+            })
+        }else {
+            $(".top").css({
+                "position":"static",
+                "zIndex":"5"
+            })
+        }
+    })
 })
 
 var navjson =
