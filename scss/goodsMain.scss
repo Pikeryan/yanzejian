@@ -1,0 +1,51 @@
+@charset "utf-8";
+.goodsMain{width:1000px;margin:0 auto;margin-top:10px;margin-bottom:30px;min-height:1500px;
+  h3{background:#e0e0e0;padding:0 10px;margin:28px 0 2px 0;
+    em{float:left;width:3px ;background: #e47313;height:15px;margin-right:10px;margin-top:10px;}
+    span{float:left;font:600 13px/33px "微软雅黑";}
+    a{float:right;line-height:33px;text-decoration: none;}
+    a:hover{color:#e47313;}
+  }
+}
+.goodsDetailsNav{padding:12px 0 8px 0 ; background:#212121;border-top: solid 8px #c3c3c3;margin-top:2px;color:#fff;
+  ul{height:25px;float:right;margin-bottom:0;
+    li{float:left;border-right:1px solid #fff;line-height:25px;height:25px;}
+    li:last-child{border:0;}
+    span{float:left;height:15px;width:15px;border-radius: 50%;border:1px solid #fff;margin:5px 11px;}
+    a{float:right;color:#fff;text-decoration: none;padding-right:24px;font-size:15px;}
+    a:hover{text-decoration: underline;}
+  }
+}
+#Eunne , #Lavidione , #AEannelog , #Fagire, #Marc , #Shezglobal{background:#efefef;
+  li {float:left;position: relative;width:244px;height:401px;margin:8px 0 0 5px;padding:5px 5px 15px;
+    a:nth-of-type(2){display:block;font:12px/18px "微软雅黑";color:#666;height:36px;margin:7px 0;text-decoration: none;}
+    a:hover{color:#e47313;}
+    span{display:block;padding-left:20px;color:#d80c61;font: 600 16px "微软雅黑";background:url("../images/goodsMain/xsearchico20120615.png") no-repeat 5px -357px;}
+  }
+  li>img{position: absolute;top:5px ;right:5px}
+  li:hover{background:#fff;}
+  li>.goodSize{height:0px;position:absolute;left:5px;bottom:4px;width:234px;display:none;
+    div{position:absolute;top:0;left:0;height:80px;width:234px;padding-top:10px;}
+    .opacity{background:#fff;opacity:0.95;}
+    p{font-size:14px;color:#666;line-height:24px;padding-left:10px;}
+    em{font-style:normal;float:left;border:1px solid #ccc;padding:0px 10px;margin:0 10px;}
+  }
+}
+
+.backtop{position:fixed;top:200px;margin-left:1030px;border:1px solid #ccc;
+  span{display:block;height:32px;width:67px;text-align: center;line-height:30px;cursor:pointer;color:#f00;border-bottom:1px solid #ccc;}
+  span:hover{background:#f00;color:#fff;}
+  p{width:67px;height:56px;background: url("../images/goodsMain/r_menu_bg.jpg") no-repeat -1px 0px;margin:0;padding:0;cursor:pointer;}
+  p:nth-of-type(2){background-position: -1px -55px;}
+  p:nth-of-type(3){background-position: -1px -113px;}
+  p:nth-of-type(4){background-position: -1px -171px;}
+  p:nth-of-type(1):hover{background-position: -69px 0px;}
+  p:nth-of-type(2):hover{background-position: -69px -55px;}
+  p:nth-of-type(3):hover{background-position: -69px -113px;}
+  p:nth-of-type(4):hover{background-position: -69px -171px;}
+
+}
+
+.morerm{height:50px;font-size:12px;line-height:50px;background :#000 url(../images/goodsMain/pic_54.gif) no-repeat 20px 8px;margin-top: 20px;a{float:right;color:#FFF;margin-right:20px;text-decoration: none;}
+  a:hover{text-decoration: none;color:#ffff00;}
+}

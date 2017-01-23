@@ -13,7 +13,6 @@ $(function(){
     },function(){
         $(".daizi").css("display","none")
     })
-    console.log(navjson);
 
 
     /*导航栏的样式*/
