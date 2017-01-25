@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品详情页</title>
+    <link rel="stylesheet" href="css/commen.css">
+    <link rel="stylesheet" href="css/details.css">
+    <script src="js/lib/jquery.js"></script>
+    <script src="js/app/details.js"></script>
+    <style>
+        .detailsMain{width:1000px;min-height:600px;margin:0 auto;padding-top:6px;}
+    </style>
+</head>
+<body>
+<div class="detailsTop"></div>
+<!--头部引入完成-->
+<!--下面是我的主题部分-->
+<div class="detailsMain">
+    <p class="myaddr">您的位置: <a href="#">走秀首页</a> &gt; <a href="#">女装</a> &gt; <a href="#">上衣</a> &gt; <a href="#">风衣</a> &gt; 女士经典挺括棉A字型显瘦中袖红色外套</p>
+    <div class="goodsDetails">
+        <div class="deatailsleft">
+            <div class="smallimg">
+                <img src="images/details/pic_07.jpg" alt="">
+                <div class="smallview"></div>
+                <div class="bigview">
+                    <img src="images/details/pic_08.jpg" class="bigimg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="deatailsRight">
+
+        </div>
+    </div>
+</div>
+
+<div class="detailsFooter"></div>
+<script>
+    $(function(){
+        $(".detailsTop").load("header.html");
+        $(".detailsFooter").load("footer.html");
+    })
+</script>
+</body>
+</html>
