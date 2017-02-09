@@ -1,0 +1,36 @@
+[
+  {
+    "goodsName":"女士印花雪纺衫",
+    "pinpai":"Philosophy",
+    "goodsSize":"颜色 : 黑色 尺码 : IT42",
+    "goodsImg":"images/shopCar/pic_01.jpg",
+    "oldPrice":"3400",
+    "newPrice":"2240",
+    "cuxiaoInfo":"1.24下单6.5折1480元",
+    "cuxiao":"促销",
+    "nums":1,
+    "maxNums":2
+  },{
+  "goodsName":"女士印花雪纺衫",
+  "pinpai":"Philosophy",
+  "goodsSize":"颜色 : 黑色 尺码 : IT42",
+  "goodsImg":"images/shopCar/pic_01.jpg",
+  "oldPrice":"3400",
+  "newPrice":"2240",
+  "cuxiaoInfo":"1.24下单6.5折1480元",
+  "cuxiao":"促销",
+  "nums":1,
+  "maxNums":3
+},{
+  "goodsName":"女士印花雪纺衫",
+  "pinpai":"Philosophy",
+  "goodsSize":"颜色 : 黑色 尺码 : IT42",
+  "goodsImg":"images/shopCar/pic_01.jpg",
+  "oldPrice":"3400",
+  "newPrice":"2240",
+  "cuxiaoInfo":"1.24下单6.5折1480元",
+  "cuxiao":"促销",
+  "nums":1,
+  "maxNums":9
+}
+]

@@ -1,0 +1,175 @@
+@charset "UTF-8";
+.goodsMain {
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  min-height: 1500px; }
+  .goodsMain h3 {
+    background: #e0e0e0;
+    padding: 0 10px;
+    margin: 28px 0 2px 0; }
+    .goodsMain h3 em {
+      float: left;
+      width: 3px;
+      background: #e47313;
+      height: 15px;
+      margin-right: 10px;
+      margin-top: 10px; }
+    .goodsMain h3 span {
+      float: left;
+      font: 600 13px/33px "微软雅黑"; }
+    .goodsMain h3 a {
+      float: right;
+      line-height: 33px;
+      text-decoration: none; }
+    .goodsMain h3 a:hover {
+      color: #e47313; }
+
+.goodsDetailsNav {
+  padding: 12px 0 8px 0;
+  background: #212121;
+  border-top: solid 8px #c3c3c3;
+  margin-top: 2px;
+  color: #fff; }
+  .goodsDetailsNav ul {
+    height: 25px;
+    float: right;
+    margin-bottom: 0; }
+    .goodsDetailsNav ul li {
+      float: left;
+      border-right: 1px solid #fff;
+      line-height: 25px;
+      height: 25px; }
+    .goodsDetailsNav ul li:last-child {
+      border: 0; }
+    .goodsDetailsNav ul span {
+      float: left;
+      height: 15px;
+      width: 15px;
+      border-radius: 50%;
+      border: 1px solid #fff;
+      margin: 5px 11px; }
+    .goodsDetailsNav ul a {
+      float: right;
+      color: #fff;
+      text-decoration: none;
+      padding-right: 24px;
+      font-size: 15px; }
+    .goodsDetailsNav ul a:hover {
+      text-decoration: underline; }
+
+#Eunne, #Lavidione, #AEannelog, #Fagire, #Marc, #Shezglobal {
+  background: #efefef; }
+  #Eunne li, #Lavidione li, #AEannelog li, #Fagire li, #Marc li, #Shezglobal li {
+    float: left;
+    position: relative;
+    width: 244px;
+    height: 401px;
+    margin: 8px 0 0 5px;
+    padding: 5px 5px 15px; }
+    #Eunne li a:nth-of-type(2), #Lavidione li a:nth-of-type(2), #AEannelog li a:nth-of-type(2), #Fagire li a:nth-of-type(2), #Marc li a:nth-of-type(2), #Shezglobal li a:nth-of-type(2) {
+      display: block;
+      font: 12px/18px "微软雅黑";
+      color: #666;
+      height: 36px;
+      margin: 7px 0;
+      text-decoration: none; }
+    #Eunne li a:hover, #Lavidione li a:hover, #AEannelog li a:hover, #Fagire li a:hover, #Marc li a:hover, #Shezglobal li a:hover {
+      color: #e47313; }
+    #Eunne li span, #Lavidione li span, #AEannelog li span, #Fagire li span, #Marc li span, #Shezglobal li span {
+      display: block;
+      padding-left: 20px;
+      color: #d80c61;
+      font: 600 16px "微软雅黑";
+      background: url("../images/goodsMain/xsearchico20120615.png") no-repeat 5px -357px; }
+  #Eunne li > img, #Lavidione li > img, #AEannelog li > img, #Fagire li > img, #Marc li > img, #Shezglobal li > img {
+    position: absolute;
+    top: 5px;
+    right: 5px; }
+  #Eunne li:hover, #Lavidione li:hover, #AEannelog li:hover, #Fagire li:hover, #Marc li:hover, #Shezglobal li:hover {
+    background: #fff; }
+  #Eunne li > .goodSize, #Lavidione li > .goodSize, #AEannelog li > .goodSize, #Fagire li > .goodSize, #Marc li > .goodSize, #Shezglobal li > .goodSize {
+    height: 0px;
+    position: absolute;
+    left: 5px;
+    bottom: 4px;
+    width: 234px;
+    display: none; }
+    #Eunne li > .goodSize div, #Lavidione li > .goodSize div, #AEannelog li > .goodSize div, #Fagire li > .goodSize div, #Marc li > .goodSize div, #Shezglobal li > .goodSize div {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 80px;
+      width: 234px;
+      padding-top: 10px; }
+    #Eunne li > .goodSize .opacity, #Lavidione li > .goodSize .opacity, #AEannelog li > .goodSize .opacity, #Fagire li > .goodSize .opacity, #Marc li > .goodSize .opacity, #Shezglobal li > .goodSize .opacity {
+      background: #fff;
+      opacity: 0.95; }
+    #Eunne li > .goodSize p, #Lavidione li > .goodSize p, #AEannelog li > .goodSize p, #Fagire li > .goodSize p, #Marc li > .goodSize p, #Shezglobal li > .goodSize p {
+      font-size: 14px;
+      color: #666;
+      line-height: 24px;
+      padding-left: 10px; }
+    #Eunne li > .goodSize em, #Lavidione li > .goodSize em, #AEannelog li > .goodSize em, #Fagire li > .goodSize em, #Marc li > .goodSize em, #Shezglobal li > .goodSize em {
+      font-style: normal;
+      float: left;
+      border: 1px solid #ccc;
+      padding: 0px 10px;
+      margin: 0 10px; }
+
+.backtop {
+  position: fixed;
+  top: 200px;
+  margin-left: 1030px;
+  border: 1px solid #ccc; }
+  .backtop span {
+    display: block;
+    height: 32px;
+    width: 67px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    color: #f00;
+    border-bottom: 1px solid #ccc; }
+  .backtop span:hover {
+    background: #f00;
+    color: #fff; }
+  .backtop p {
+    width: 67px;
+    height: 56px;
+    background: url("../images/goodsMain/r_menu_bg.jpg") no-repeat -1px 0px;
+    margin: 0;
+    padding: 0;
+    cursor: pointer; }
+  .backtop p:nth-of-type(2) {
+    background-position: -1px -55px; }
+  .backtop p:nth-of-type(3) {
+    background-position: -1px -113px; }
+  .backtop p:nth-of-type(4) {
+    background-position: -1px -171px; }
+  .backtop p:nth-of-type(1):hover {
+    background-position: -69px 0px; }
+  .backtop p:nth-of-type(2):hover {
+    background-position: -69px -55px; }
+  .backtop p:nth-of-type(3):hover {
+    background-position: -69px -113px; }
+  .backtop p:nth-of-type(4):hover {
+    background-position: -69px -171px; }
+
+.morerm {
+  height: 50px;
+  font-size: 12px;
+  line-height: 50px;
+  background: #000 url(../images/goodsMain/pic_54.gif) no-repeat 20px 8px;
+  margin-top: 20px; }
+  .morerm a {
+    float: right;
+    color: #FFF;
+    margin-right: 20px;
+    text-decoration: none; }
+  .morerm a:hover {
+    text-decoration: none;
+    color: #ffff00; }
+
+/*# sourceMappingURL=goodsMain.css.map */

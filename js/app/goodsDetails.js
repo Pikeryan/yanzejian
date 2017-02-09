@@ -8,6 +8,7 @@ $(function(){
     EunneLode(AEannelogjson,$("#AEannelog ul"));
     EunneLode(Fagirejson,$("#Fagire ul"));
     EunneLode(Marcjson,$("#Marc ul"));
+
     $(".goodsMain ul li").hover(function(){
         console.log( $(this.children[4]));
         $(this.children[4]).css("display","block");

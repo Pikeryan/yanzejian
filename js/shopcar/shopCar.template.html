@@ -1,0 +1,32 @@
+<div class="gcmain" ng-repeat="goods in $ctrl.carGoods" ng-show="true" >
+    <span><input type="checkbox" name="" class="checkBox" checked></span>
+    <span>
+        <a href="#"><img ng-src={{goods.goodsListImg}} alt=""></a>
+        <div>
+            <p>{{goods.pinpai}}</p>
+            <p><a href="#">{{goods.goodsName}}</a></p>
+            <p>{{goods.goodsSize}}</p>
+        </div>
+    </span>
+    <span>
+        <p >{{goods.price | currency:"￥"}}</p>
+        <p>{{goods.price | currency:"￥"}}</p>
+        <p ng-if="goods.discount">{{goods.discount}}折
+            <span >
+                {{goods.cuxiaoInfo}}
+            </span>
+        </p>
+    </span>
+    <span>{{goods.price*goods.number
+ | currency:"￥"}}</span>
+    <span>
+        <i ng-click="addClick(goods)">-</i>
+        <input type="text"  ng-model="goods.number
+" />
+        <i ng-click="addClick(goods)">+</i>
+    </span>
+    <span>
+         <p>移至收藏夹</p>
+         <p>删除</p>
+    </span>
+</div>

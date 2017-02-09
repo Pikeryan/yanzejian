@@ -9,6 +9,9 @@ var goodsjson2 = [{"img":"images/0121goods_c1.jpg"},{"img":"images/0121goods_c3.
 var goodsjson3 = [{"img":"images/0121goods_d1.jpg"},{"img":"images/0121goods_d3.jpg"},{"img":"images/0121goods_d6.jpg"},{"img":"images/0121goods_d2.jpg"},{"img":"images/0121goods_d4.jpg"},{"img":"images/0121goods_d5.jpg"}];
 var goodsjson4 = [{"img":"images/0121goods_e1.jpg"},{"img":"images/0121goods_e3.jpg"},{"img":"images/0121goods_e6.jpg"},{"img":"images/0121goods_e2.jpg"},{"img":"images/0121goods_e4.jpg"},{"img":"images/0121goods_e5.jpg"}];
 var goodsjson5 = [{"img":"images/0121goods_f1.jpg"},{"img":"images/0121goods_f3.jpg"},{"img":"images/0121goods_f6.jpg"},{"img":"images/0121goods_f2.jpg"},{"img":"images/0121goods_f4.jpg"},{"img":"images/0121goods_f5.jpg"}];
+
+
+
 $(function(){
     $(".xinrenfenxiang a").hover(function(){
         $(this).stop().animate({"left":"-30px"},300)

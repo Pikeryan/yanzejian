@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html ng-app="shopCar">
+<head>
+    <meta charset="UTF-8">
+    <title>我的购物袋-走秀网-全球品牌网络旗舰店：正品，支持货到付款，7天无条件退换货保障！</title>
+    <link rel="stylesheet" href="css/commen.css">
+    <link rel="stylesheet" href="css/shopCar.css"/>
+    <script type="text/javascript" src="js/lib/jquery.js"></script>
+    <script type="text/javascript" src="js/lib/angular.min.js"></script>
+    <script type="text/javascript" src="js/shopcar/shopCar.module.js"></script>
+    <script type="text/javascript" src="js/shopcar/shopCar.component.js"></script>
+    <script type="text/javascript" src="js/shopcar/app.js"></script>
+
+</head>
+<body >
+      <div class="shopCarTop">
+          <h1><a target="_blank" href="index.html"></a></h1>
+          <div class="topRight">
+              <p>客服热线(免长途费)：<b>400-888-4499</b> <a target="_blank" href="#">在线客服</a></p>
+              <p>您好!欢迎光临走秀网! <a href="#">[ 登录/注册 ]</a> | <a href="#">帮助中心</a></p>
+          </div>
+      </div>
+    <div class="shopCarMain">
+        <div class="scMtop">
+            <ul class="clear">
+                <li>1.我的购物袋 <span></span></li>
+                <li>2.填写并核对订单信息<span></span></li>
+                <li>3.成功提交订单></li>
+            </ul>
+        </div>
+        <div class="goodsCar clear">
+            <!--这是购物车的头部-->
+            <div class="gctop">
+                <span><input type="checkbox" name="" class="checkedAll"  />全选</span>
+                <span>商品</span>
+                <span>购买价(元)</span>
+                <span>小计(元)</span>
+                <span>数量</span>
+                <span>操作</span>
+            </div>
+            <!--购物车商品-->
+            <div class="goodsChecked">
+                <car-list></car-list>
+            </div>
+
+        </div>
+        <div class="priceCount" ng-controller="myCount">
+            <span><input type="checkbox" class="checkedAll" /></span>
+            <span>全选</span>
+            <span>删除</span>
+            <span>清除失效商品</span>
+            <span>移至收藏夹</span>
+            <span>已选商品 <b ng-bind="goodsCount"></b>件</span>
+            <span>总计(不含运费)：<b ng-bind="totalPrice"></b></span>
+            <button>结算</button>
+        </div>
+    </div>
+
+</body>
+</html>

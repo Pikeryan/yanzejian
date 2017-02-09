@@ -1,0 +1,242 @@
+.shopCarTop {
+  height: 64px;
+  width: 950px;
+  margin: 0 auto;
+  padding-top: 10px;
+  border-bottom: 1px solid #000; }
+  .shopCarTop h1 a {
+    float: left;
+    width: 194px;
+    height: 59px;
+    background: url("../images/shopCar/s_05.png") no-repeat; }
+  .shopCarTop .topRight {
+    float: right; }
+    .shopCarTop .topRight p {
+      font-size: 12px;
+      padding-right: 15px; }
+      .shopCarTop .topRight p b {
+        color: #f0ad4e;
+        font-size: 20px;
+        line-height: 20px; }
+      .shopCarTop .topRight p a:hover {
+        color: #f0ad4e; }
+    .shopCarTop .topRight p:nth-of-type(2) {
+      text-align: right;
+      margin-top: 20px;
+      padding-right: 0px; }
+
+.shopCarMain {
+  width: 950px;
+  margin: 0 auto; }
+  .shopCarMain ul {
+    margin: 15px 0; }
+    .shopCarMain ul li {
+      float: left;
+      background: #e2e2e2;
+      width: 316px;
+      text-align: center;
+      height: 24px;
+      line-height: 24px;
+      position: relative; }
+      .shopCarMain ul li span {
+        display: block;
+        position: absolute;
+        width: 27px;
+        height: 32px;
+        background: url("../images/shopCar/s_shop1.gif") no-repeat 0px 0px;
+        right: -27px;
+        top: -4px;
+        z-index: 2; }
+    .shopCarMain ul li:nth-of-type(1) {
+      background: #82bf38;
+      color: #fff; }
+    .shopCarMain ul li:nth-of-type(2) span {
+      background-position: -27px 0; }
+  .shopCarMain .goodsCar {
+    border: 1px solid #ccc;
+    font-size: 12px;
+    border-bottom: 0; }
+    .shopCarMain .goodsCar .gctop {
+      height: 34px;
+      background: #e3e3e3;
+      line-height: 33px;
+      padding-left: 20px; }
+      .shopCarMain .goodsCar .gctop input {
+        margin-top: 10px; }
+      .shopCarMain .goodsCar .gctop span {
+        float: left;
+        text-align: center;
+        height: 33px; }
+      .shopCarMain .goodsCar .gctop span:nth-of-type(2) {
+        width: 320px; }
+      .shopCarMain .goodsCar .gctop span:nth-of-type(3) {
+        width: 160px; }
+      .shopCarMain .goodsCar .gctop span:nth-of-type(4) {
+        width: 130px; }
+      .shopCarMain .goodsCar .gctop span:nth-of-type(5) {
+        width: 140px; }
+      .shopCarMain .goodsCar .gctop span:nth-of-type(6) {
+        width: 120px; }
+    .shopCarMain .goodsCar .gcmain {
+      height: 110px;
+      padding-left: 20px;
+      background: #fef4e8;
+      border-bottom: 1px solid #ccc; }
+      .shopCarMain .goodsCar .gcmain input {
+        margin-top: 48px; }
+      .shopCarMain .goodsCar .gcmain span {
+        float: left;
+        height: 110px; }
+      .shopCarMain .goodsCar .gcmain img {
+        width: 60px;
+        height: 80px; }
+      .shopCarMain .goodsCar .gcmain span > a {
+        float: left; }
+      .shopCarMain .goodsCar .gcmain span:nth-of-type(2) {
+        margin-left: 65px;
+        width: 300px; }
+        .shopCarMain .goodsCar .gcmain span:nth-of-type(2) div {
+          float: left;
+          margin-left: 10px;
+          line-height: 20px;
+          margin-top: 10px;
+          width: 180px; }
+        .shopCarMain .goodsCar .gcmain span:nth-of-type(2) img {
+          margin-top: 10px;
+          border: 1px solid #ccc; }
+      .shopCarMain .goodsCar .gcmain span:nth-of-type(3) {
+        width: 130px;
+        font-size: 12px;
+        text-align: center; }
+        .shopCarMain .goodsCar .gcmain span:nth-of-type(3) p:nth-of-type(1) {
+          height: 25px;
+          line-height: 25px;
+          margin-top: 15px;
+          color: #999;
+          text-decoration: line-through; }
+        .shopCarMain .goodsCar .gcmain span:nth-of-type(3) p:nth-of-type(2) {
+          color: #000;
+          height: 18px;
+          line-height: 18px; }
+        .shopCarMain .goodsCar .gcmain span:nth-of-type(3) p:nth-of-type(3) {
+          box-sizing: border-box;
+          height: 22px;
+          line-height: 22px;
+          width: 60px;
+          background: #f00 url("../images/shopCar/car_arrow.png") no-repeat 45px 2px;
+          color: #fff;
+          text-align: left;
+          padding-left: 10px;
+          margin: 0 auto; }
+          .shopCarMain .goodsCar .gcmain span:nth-of-type(3) p:nth-of-type(3) span {
+            display: none; }
+        .shopCarMain .goodsCar .gcmain span:nth-of-type(3) p:nth-of-type(3):hover {
+          background: #fff url("../images/shopCar/car_arrow.png") no-repeat 45px -18px;
+          color: #0f0f0f;
+          border: 1px solid #ccc;
+          border-bottom: 1px solid #fff;
+          position: relative; }
+          .shopCarMain .goodsCar .gcmain span:nth-of-type(3) p:nth-of-type(3):hover span {
+            display: block;
+            height: 60px;
+            width: 200px;
+            border: 1px solid #ccc;
+            background: #fff;
+            position: absolute;
+            top: 21px;
+            left: -1px; }
+      .shopCarMain .goodsCar .gcmain span:nth-of-type(4) {
+        line-height: 110px;
+        color: #e6576b;
+        font-weight: 600;
+        width: 140px;
+        text-align: center; }
+      .shopCarMain .goodsCar .gcmain span:nth-of-type(5) {
+        width: 150px;
+        text-align: center; }
+        .shopCarMain .goodsCar .gcmain span:nth-of-type(5) input {
+          width: 18px;
+          text-align: center; }
+        .shopCarMain .goodsCar .gcmain span:nth-of-type(5) i {
+          font-style: normal;
+          border: 1px solid #ccc;
+          padding: 0 3px;
+          margin: 0 3px;
+          cursor: pointer; }
+      .shopCarMain .goodsCar .gcmain span:nth-of-type(6) {
+        text-align: center;
+        margin-top: 30px;
+        height: 60px;
+        width: 110px;
+        line-height: 22px; }
+        .shopCarMain .goodsCar .gcmain span:nth-of-type(6) p {
+          cursor: pointer; }
+        .shopCarMain .goodsCar .gcmain span:nth-of-type(6) p:hover {
+          color: #ff6558; }
+  .shopCarMain .priceCount {
+    height: 50px;
+    border: 1px solid #ccc;
+    margin-top: 3px;
+    line-height: 50px;
+    font-size: 12px;
+    padding-left: 10px; }
+    .shopCarMain .priceCount span {
+      float: left;
+      height: 50px;
+      color: #666; }
+    .shopCarMain .priceCount input {
+      margin-top: 20px; }
+    .shopCarMain .priceCount span:nth-of-type(3) {
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      cursor: pointer;
+      margin: 0 10px; }
+    .shopCarMain .priceCount span:nth-of-type(3):hover {
+      background: orange;
+      color: #fff; }
+    .shopCarMain .priceCount span:nth-of-type(4) {
+      width: 110px;
+      height: 50px;
+      text-align: center;
+      margin: 0 10px;
+      cursor: pointer; }
+    .shopCarMain .priceCount span:nth-of-type(4):hover {
+      background: orange;
+      color: #fff; }
+    .shopCarMain .priceCount span:nth-of-type(5) {
+      width: 90px;
+      height: 50px;
+      text-align: center;
+      margin: 0 10px;
+      cursor: pointer; }
+    .shopCarMain .priceCount span:nth-of-type(5):hover {
+      background: orange;
+      color: #fff; }
+    .shopCarMain .priceCount span:nth-of-type(6) {
+      width: 120px;
+      height: 50px;
+      text-align: center;
+      margin-left: 30px; }
+      .shopCarMain .priceCount span:nth-of-type(6) b {
+        color: #f00; }
+    .shopCarMain .priceCount span:nth-of-type(7) {
+      width: 220px;
+      height: 50px;
+      text-align: center;
+      margin-left: 30px; }
+      .shopCarMain .priceCount span:nth-of-type(7) b {
+        color: #f00;
+        font-size: 20px; }
+    .shopCarMain .priceCount button {
+      float: right;
+      height: 50px;
+      width: 114px;
+      cursor: pointer;
+      color: #fff;
+      background: orange;
+      font-size: 22px;
+      outline: none;
+      border: 0; }
+
+/*# sourceMappingURL=shopCar.css.map */

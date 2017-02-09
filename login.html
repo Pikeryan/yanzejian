@@ -1,35 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="reLogin">
 <head>
     <meta charset="UTF-8">
     <title>登陆注册页面</title>
     <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/commen.css">
+    <script src="js/lib/angular.min.js"></script>
     <script type="text/javascript" src="js/lib/jquery.js"></script>
+
+
+    <script src="js/app/login/module.js"></script>
+    <script src="js/app/login/service.js"></script>
+    <script src="js/app/login/component.js"></script>
+
     <script type="text/javascript" src="js/app/login.js"></script>
+
+
 </head>
 <body>
 <div class="login-top">
     <h1><a href="index.html"><img src="images/login/pic_01.png" alt=""></a></h1>
 </div>
-<div class="login-main">
+<div class="login-main" ng-controller = "registerController">
     <div class="loginBox">
         <div class="phoneBox">
             <div class="loginBox-top">
                 <p class="loginBox-p">短信登陆</p>
                 <p>密码登陆</p>
             </div>
-            <form action="">
-                <div class="login" style="display:none;">
+            <form>
+                <div class="login" style="display:none;" >
                     <div class="loginName">
                         <span><strong></strong>手机号不存在</span>
                         <em>手机号码</em>
-                        <input type="text" placeholder="手机号/邮箱/用户名"/>
+                        <input type="text" placeholder="手机号/邮箱/用户名" />
                     </div>
                     <div class="loginName">
                     <span><strong></strong>密码不正确</span>
                     <em>短信验证码</em>
-                    <input type="password" placeholder="密码"/>
+                    <input type="password" placeholder="密码" ng-model="pwd"/>
                 </div>
                     <div class="rememberPassword clear">
                         <span><i></i>两周内自动登陆</span>
@@ -42,12 +51,12 @@
                     <div class="loginName">
                         <span id="signNameError"><strong></strong>请输入有效的手机号！</span>
                         <em>手机号码</em>
-                        <input type="text" id="signName" placeholder="手机号码"/>
+                        <input type="text" id="signName" placeholder="手机号码" ng-model="uname"/>
                     </div>
                     <div class="loginName clear">
                         <span id="signPasswordError"><strong></strong>请输入合法的密码</span>
                         <em>短信验证码</em>
-                        <input class="validateCode" id="signPassword" type="password" placeholder="短信验证码"/>
+                        <input class="validateCode" id="signPassword" type="password" placeholder="短信验证码"  ng-model="pwd"/>
                         <button>获取验证码</button>
                     </div>
                     <div class="rememberPassword clear">
@@ -58,7 +67,7 @@
                     </div>
                 </div>
 
-                <div class="loginIn"><input type="submit" value="登&nbsp;&nbsp;&nbsp;&nbsp;陆"></div>
+                <div class="loginIn"><button ng-click="registerLogin(uname,pwd)">登&nbsp;&nbsp;&nbsp;&nbsp;陆</button></div>
                 <div class="otherLoginPort">
                     <p><span>合作网站账号登陆</span></p>
                     <p class="clear">

@@ -2,6 +2,8 @@
  * Created by Administrator on 2017/1/18.
  * 这里是登陆注册页面的js代码
  */
+angular.module("reLogin",["register"])//注册模块给angular管理
+
 $(function(){
     /*这是登陆框的js上边显示代码狂*/
     $(".loginBox p").click(function(){
@@ -42,23 +44,29 @@ $(function(){
         $(".loginBox .codeBox").toggleClass("hideBlock");
     })
     /*验证登陆*/
-    $("#signName").blur(function(){
+    $("#signName").blur(function registerUserName(){
+        var flag = false;
         var txt = $(this).val();
         var rule = /^[0-9]{11}$/;
         if(!(rule.test(txt))){
-            $("#signNameError").css("display","block")
+            $("#signNameError").css("display","block");
         }else{
             $("#signNameError").css("display","none")
+            flag = true;
         }
+        return flag;
     });
-    $("#signPassword").blur(function(){
+    $("#signPassword").blur(function registerPwd(){
+        var flag = false;
         var txt = $(this).val();
         var rule = /^[0-9]{6}$/;
         if( !(rule.test(txt)) ){
             $("#signPasswordError").css("display","block")
         }else{
             $("#signPasswordError").css("display","none")
+            flag = true;
         }
+        return flag;
     })
 
 })

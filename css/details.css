@@ -1,0 +1,46 @@
+.myaddr {
+  border-bottom: 1px solid #e5e5e5;
+  line-height: 36px;
+  font-size: 12px;
+  color: #666; }
+  .myaddr a {
+    font-size: 12px;
+    color: #005ba1; }
+  .myaddr a:hover {
+    text-decoration: none; }
+
+.goodsDetails {
+  min-height: 800px;
+  background: #007fff; }
+  .goodsDetails .deatailsleft {
+    float: left; }
+  .goodsDetails .smallimg {
+    width: 403px;
+    height: 536px;
+    position: relative; }
+    .goodsDetails .smallimg .smallview {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 200px;
+      width: 200px;
+      background: #ccc;
+      opacity: 0.5;
+      display: none; }
+    .goodsDetails .smallimg .bigview {
+      width: 403px;
+      height: 537px;
+      border: 1px solid #666;
+      position: absolute;
+      top: 0;
+      left: 413px;
+      overflow: hidden;
+      display: none; }
+    .goodsDetails .smallimg .bigimg {
+      position: absolute;
+      top: 0;
+      left: 0; }
+  .goodsDetails .deatailsRight {
+    float: right; }
+
+/*# sourceMappingURL=details.css.map */
